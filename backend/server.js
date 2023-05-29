@@ -5,6 +5,9 @@ const workoutRoutes = require('./routes/workouts')
 
 // express app
 const app = express()
+const cors = require('cors')
+
+app.use(cors())
 
 // middleware
 app.use(express.json())
